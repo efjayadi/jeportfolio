@@ -347,7 +347,7 @@
                 <!-- end single work -->
 				<!-- single work -->
                 <div class="col-md-6 col-sm-12 flyer ads">
-                    <a href="single-project.html" class="portfolio_item">
+                    <a href="mie-cobek.html" class="portfolio_item">
                         <img src="img/cwp-mcp.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
@@ -546,18 +546,34 @@
                     </a>
                 </div>
                 <!-- end single work -->
+				<style>
+				video{
+				transition:0.2s;
+				filter: brightness(95%)
+				}
+				video:hover{
+				filter: brightness(100%)
+				}
+				</style>
+				<!-- single work -->
+				<div class="col-md-3 col-sm-6 ads">
+				<video  onmouseover="this.play()" onmouseout="this.pause()"  width="100%" height="100%">
+				<source src="video/ppig-sb.mp4" type="video/mp4">
+				</video>    
+				</div>
+				<!-- single work -->
 				<!-- single work -->
 				<div class="col-md-3 col-sm-6 sketchup">
-				<video id="myVid" autoplay width="100%" height="100%">
+				<video onmouseover="this.play()" onmouseout="this.pause()"  width="100%" height="100%">
 				<source src="video/cwsu-stc.mp4" type="video/mp4">
 				</video>
 				</div>
 				<!-- single work -->
 				
 				<!-- single work -->
-				<div class="col-md-3 col-sm-6 ads">
-				<video id="myVidd" autoplay width="100%" height="100%">
-				<source src="video/ppig-sb.mp4" type="video/mp4">
+				<div class="col-md-3 col-sm-6 sketchup">
+				<video  onmouseover="this.play()" onmouseout="this.pause()"  width="100%" height="100%">
+				<source src="video/cwsu-mat.mp4" type="video/mp4">
 				</video>    
 				</div>
 				<!-- single work -->
@@ -603,7 +619,7 @@
 
         <div class="col-md-6">
             <h3 class="text-uppercase">contact me</h3>
-            <h5>Form kontak ini berfungsi, coba sekarang</h5>
+            <h5>Creative & Lorem ipsum dolor sit amet</h5>
             
 
   <div class="email" onclick="this.classList.add('expand')">
@@ -739,6 +755,16 @@ document.getElementById("myVid").addEventListener("mouseleave", function() {
 </script>
 
 <!--  video hover -->
+<script>
+document.getElementById("myVidd").addEventListener("mouseover", function() {
+	this.play();
+});
+
+document.getElementById("myVidd").addEventListener("mouseleave", function() {
+	this.pause();
+});
+</script>
+
 <script>
 document.getElementById("myVidd").addEventListener("mouseover", function() {
 	this.play();
