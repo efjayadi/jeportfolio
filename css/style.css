@@ -38,7 +38,8 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     color: #999;
-	overflow:hidden;
+	
+    overflow-x: hidden;
 }
 
 .no-padding {
