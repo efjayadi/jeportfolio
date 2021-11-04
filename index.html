@@ -28,205 +28,6 @@
     <![endif]-->
 	<style>
 
-.me {
-  background-image: url(img/me.png);
-  background-size: cover;
-}
-
-.email {
-  background: #ddd;
-  border-radius: 16px;
-  height: 34px;
-  padding-top:1px;
-  overflow: hidden;
-  position: relative;
-  width: 162px;
-  -webkit-tap-highlight-color: transparent;
-  transition: width 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
-    height 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
-    box-shadow 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
-    border-radius 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-.email:not(.expand) {
-  cursor: pointer;
-}
-.email:not(.expand):hover {
-  background: #C2C0C2;
-}
-.from {
-  position: absolute;
-  transition: opacity 200ms 100ms cubic-bezier(0.0, 0.0, 0.2, 1);
-}
-.from-contents {
-  display: flex;
-  flex-direction: row;
-  transform-origin: 0 0;
-  transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-.to {
-  opacity: 0;
-  position: absolute;
-  transition: opacity 100ms cubic-bezier(0.4, 0.0, 1, 1);
-}
-.to-contents {
-  transform: scale(.75);
-  transform-origin: 0 0;
-  transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-.avatar {
-  border-radius: 12px;
-  height: 28px;
-  left: 3px;
-  position: relative;
-  top: 2px;
-  width: 28px;
-}
-.name {
-  font-size: 16px;
-  line-height: 32px;
-  margin-left: 14px;
-}
-.top {
-  background: #FFBF00;
-  display: flex;
-  flex-direction: row;
-  height: 70px;
-  transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-  width: 300px;
-}
-.avatar-large {
-  border-radius: 21px;
-  height: 66px;
-  margin-left: 12px;
-  position: relative;
-  top: 14px;
-  width: 66px;
-}
-.name-large {
-  color: #000;
-  font-size: 24px;
-  line-height: 75px;
-  margin-left: 13px;
-  margin-top: -2px;
-}
-.x-touch {
-  align-items: center;
-  align-self: center;
-  cursor: pointer;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  margin-left: auto;
-  width: 50px;
-}
-.x {
-  background: #000;
-  border-radius: 10px;
-  height: 20px;
-  position: relative;
-  width: 20px;
-  opacity:0.6;
-  transition:0.5s;
-}
-.x-touch:hover .x {
-  opacity:1;
-}
-.line1 {
-  background: #fff;
-  height: 12px;
-  position: absolute;
-  transform: translateX(9px) translateY(4px) rotate(45deg);
-  width: 2px;
-}
-.line2 {
-  background: #fff;
-  height: 12px;
-  position: absolute;
-  transform: translateX(9px) translateY(4px) rotate(-45deg);
-  width: 2px;
-}
-.bottom {
-  background: #FFF;
-  color:  #444247;
-  font-size: 14px;
-  height: 200px;
-  padding-top: 5px;
-  width: 300px;
-}
-.wow {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 60px;
-}
-.twitter {
-  margin-left: 16px;
-  height: 30px;
-  position: relative;
-  top: 0px;
-  width: 30px;
-}
-.medium {
-  height: 30px;
-  margin-left: 16px;
-  position: relative;
-  width: 30px;
-}
-.link {
-  margin-top:-5px;
-  margin-left: 16px;
-}
-.link a {
-  color:  #444247;
-  text-decoration: none;
-}
-.link a:hover {
-  color:  #777579;
-}
-.email.expand {
-  border-radius: 6px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.16);
-  height: 200px;
-  width: 300px;
-}
-.expand .from {
-  opacity: 0;
-  transition: opacity 100ms cubic-bezier(0.4, 0.0, 1, 1);
-}
-.expand .from-contents {
-  transform: scale(1.91);
-}
-.expand .to {
-  opacity: 1;
-  transition: opacity 200ms 100ms cubic-bezier(0.0, 0.0, 0.2, 1);
-}
-.expand .to-contents {
-  transform: scale(1);
-}
-.svg-icon {
-  margin-left:2em;
-  width: 2em;
-  height: 2em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #000;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-video{
-				display:block;
-				transition:0.2s;
-				filter: brightness(95%);
-				}
-				video:hover{
-				filter: brightness(100%);
-				}
 </style>
 </head>
 
@@ -260,22 +61,24 @@ video{
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">About me</li>
+                
 
-                <li><a href="index.html">Intro</a> <i class="ion-ios-circle-filled color"></i></li>
-                <li><a href="img/cv.png">My CV</a></li>
-                <li><a href="single-project.html">services</a></li>
-                <li><a href="single-project.html">portfolio</a></li>
-                <li><a href="contact.html">contact me</a></li>
+                <li><a href="index.html">Home</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="single-project.html">order <span style="color:#000;background-color: #ffbf00;padding:0 4px;border-radius:30px;">&nbsp;desain&nbsp;</span></a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="cv.html">My CV</a></li>
+                
 
 
-
+                <br>
                 <li class="box-label">Follow me</li>
 <li class="box-social"><a href="http://wa.me/6283192054797"><i class="ion-social-whatsapp"></i></a></li>
                 <li class="box-social"><a href="http://facebook.com/jaya.d.fajar"><i class="ion-social-facebook"></i></a></li>
                 <li class="box-social"><a href="http://instagram.com/efjayadi">
 				<i class="ion-social-instagram-outline"></i></a></li>
-                
+                <br><br><br>
+                <li style="color:#ffbf00;font-size:16px;">Welcome to<br><b style="font-size:26px">JeStudios</b></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -305,27 +108,26 @@ video{
         <!-- portfolio div -->
         <div class="portfolio-div">
             <div class="portfolio">
-                <!-- portfolio_filter -->
-                <div class="categories-grid row fadeInLeft">
-                    <nav class="categories text-center">
-                        <ul class="portfolio_filter">
-                            <li><a href="" class="active" data-filter="*">All</a></li>
-                            <li><a href="" data-filter=".banner">Banner</a></li>
-                            <li><a href="" data-filter=".flyer">Flyer</a></li>
-                            <li><a href="" data-filter=".packaging">Packaging</a></li>
-                            <li><a href="" data-filter=".ads">Ads</a></li>
-                            <li><a href="" data-filter=".sketchup">Sketchup</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- portfolio_filter -->
-
+ <!-- portfolio_filter -->
+ <div class="categories-grid row fadeInLeft">
+    <nav class="categories text-center">
+        <ul class="portfolio_filter">
+            <li><a href="" class="active" data-filter="*">All</a></li>
+            <li><a href="" data-filter=".banner">Banner</a></li>
+            <li><a href="" data-filter=".flyer">Flyer</a></li>
+            <li><a href="" data-filter=".packaging">Packaging</a></li>
+            <li><a href="" data-filter=".ads">Ads</a></li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- portfolio_filter -->
                 <!-- portfolio_container -->
                 <div class="no-padding portfolio_container clearfix">
 				<!-- single work -->
                 <div class="col-md-3 col-sm-6 banner">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwxb-ct.png" alt="image" class="img-responsive" />
+                        <img src="img/ct/cwxb-ct.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -340,7 +142,7 @@ video{
 				 <!-- single work -->
                 <div class="col-md-3 col-sm-6  banner">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwxb-smt.png" alt="image" class="img-responsive" />
+                        <img src="img/smt/cwxb-smt.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -355,7 +157,7 @@ video{
 				<!-- single work -->
                 <div class="col-md-6 col-sm-12 flyer ads">
                     <a href="mie-cobek.html" class="portfolio_item">
-                        <img src="img/cwp-mcp.png" alt="image" class="img-responsive" />
+                        <img src="img/mcp/cwp-mcp.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -372,7 +174,7 @@ video{
 				<!-- single work -->
                 <div class="col-md-3 col-sm-6 banner">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwxb-bt.png" alt="image" class="img-responsive" />
+                        <img src="img/bt/cwxb-bt.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -387,11 +189,11 @@ video{
 				<!-- single work -->
 				<div class="col-md-3 col-sm-6 banner">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/ppxb-kk.png" alt="image" class="img-responsive" />
+                        <img src="img/pp/ppxb-kk.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
-                                    <span>KochaKochi</span>
+                                    <span>Kocha-Kochi</span>
                                     <em>Branding / Design</em>
                                 </div>
                             </div>
@@ -399,11 +201,25 @@ video{
                     </a>
                 </div>
                 <!-- end single work -->
-				
 				<!-- single work -->
-                <div class="col-md-6 col-sm-12 packaging">
+                <div class="col-md-6 col-sm-12 packaging ads">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwp-bf.png" alt="image" class="img-responsive" />
+                        <img src="img/pp/ppf-si.png" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Seblak Instant</span>
+                                    <em>Ads / Design</em>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end single work -->
+				<!-- single work -->
+                <div class="col-md-3 col-sm-6 packaging">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="img/bf/cwp-bf.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -418,7 +234,7 @@ video{
 				<!-- single work -->
                 <div class="col-md-3 col-sm-6 packaging">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwlb-bgm.png" alt="image" class="img-responsive" />
+                        <img src="img/bgm/cwlb-bgm.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -430,73 +246,11 @@ video{
                     </a>
                 </div>
                 <!-- end single work -->
-				
-					 <!-- single work -->
-                <div class="col-md-3 col-sm-6 packaging">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwlb-sma.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Sari Maja Ampuh</span>
-                                    <em>Packaging / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->     	
-					<!-- single work -->
-                <div class="col-md-3 col-sm-6 packaging">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwm-trt.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Tepung Racik Tahu</span>
-                                    <em>Packaging / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-					 
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 packaging">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwm-trc.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Tepung Racik Chicken</span>
-                                    <em>Packaging / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 banner">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/ppb-scs.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Seblak nu Caket SD</span>
-                                    <em>Branding / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				
+					
 				<!-- single work -->
                 <div class="col-md-3 col-sm-6 flyer">
                     <a href="single-project.html" class="portfolio_item">
-                        <img src="img/fwm-adh.png" alt="image" class="img-responsive" />
+                        <img src="img/pp/fwm-adh.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -508,237 +262,50 @@ video{
                     </a>
                 </div>
                 <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-6 col-sm-12 packaging ads">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/ppf-si.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Seblak Instant</span>
-                                    <em>Ads / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 banner">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cw-xbtm.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>THETA Medika</span>
-                                    <em>Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 banner">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/cwxb-ti1.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>THETA Institute</span>
-                                    <em>Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 ads">
-                    <a href="https://www.dropshipper.co.id/produk/sepatu-casual-pria-ksu-kzr-571" class="portfolio_item">
-                        <img src="img/fw-kzrg.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>HIGH QUALITY SNEAKERS</span>
-                                    <em>Ads / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 ads">
-                    <a href="https://www.dropshipper.co.id/produk/sepatu-casual-pria-ksu-kzr-994" class="portfolio_item">
-                        <img src="img/fw-kzrr.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                     <span>JUST FOR YOU</span>
-                                    <em>Ads / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 ads">
-                    <a href="https://www.dropshipper.co.id/produk/sepatu-casual-pria-kuzatura-nc-kzs-483" class="portfolio_item">
-                        <img src="img/fw-kzrb.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>GET IT NOW</span>
-                                    <em>Ads / Design</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				 <div class="col-md-3 col-sm-6 ads">
-                    <a href="single-project.html" class="portfolio_item">
-                        <img src="img/mp1.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Maja</span>
-                                    <em>Product / Ads</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-				<!-- single work -->
-				<div class="col-md-3 col-sm-6 sketchup"><div class="portfolio_item">
-				<video onmouseover="this.play()" onmouseout="this.pause()"  class="img-responsive">
-				<source src="video/cwsu-stc.mp4" type="video/mp4">
-				</video>
-				</div></div>
-				<!-- single work -->
 				
+					 
 				<!-- single work -->
-				<div class="col-md-3 col-sm-6 sketchup"><div class="portfolio_item">
-				<video  onmouseover="this.play()" onmouseout="this.pause()" class="img-responsive">
-				<source src="video/cwsu-mat.mp4" type="video/mp4">
-				</video>    
-				</div></div>
-				<!-- single work -->
-				<!-- single work -->
-				<div class="col-md-3 col-sm-6 sketchup">
-				<div class="portfolio_item">
-				<video  onmouseover="this.play()" onmouseout="this.pause()"  class="img-responsive">
-				<source src="video/cwsu-bt.mp4" type="video/mp4">
-				</video>    
-				</div></div>
-				<!-- single work -->
-				<!-- single work -->
-                <div class="col-md-3 col-sm-6 sketchup">
-                <div class="portfolio_item">    
-                        <video  onmouseover="this.play()" onmouseout="this.pause()"  class="img-responsive" >
-				<source src="video/cwsu-btb.mp4" type="video/mp4">
-				</video>
+                <div class="col-md-3 col-sm-6 packaging">
+                    <a href="single-project.html" class="portfolio_item">
+                        <img src="img/ct/cwm-trc.png" alt="image" class="img-responsive" />
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Tepung Racik Chicken</span>
+                                    <em>Packaging / Design</em>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
                 <!-- end single work -->
-				
-				
+                
                 <!-- end portfolio_container -->
+                
             </div>
             <!-- portfolio -->
         </div>
         <!-- end portfolio div -->
     </div>
     <!-- end main container -->
-
+    <div style="margin-top:20px;display:flex;justify-content:center;align-items:center;width:100%;">
+        <a href="portfolio.html" class="btn btn-box" style="border-radius: 30px;">Lihat Desain Lebih Banyak</a>
+    </div>
+    <br><br>
     <!-- main-container -->
-    <div class="container main-container" id="hubungi">
-        <div class="col-md-6">
-            <form action="#" method="post">
-                <div class="row">
-				<br>
-                    <div class="col-md-6">
-                        <div class="input-contact">
-                            <input id="nama" type="text" name="name">
-                            <span>NAMA</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-contact">
-                            <input id="pt" type="text" name="company">
-                            <span>PERUSAHAAN</span>
-                        </div>
-                    </div>
-                   
-                    <div class="col-md-12">
-                        <div class="textarea-contact">
-                            <textarea id="pesan" name="message"></textarea>
-                            <span>pesan</span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <a onclick="myFunction()" id="myAnchor" href="javascript:void(0)" class="btn btn-box">Send</a>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <div class="col-md-6">
-            <h3 class="text-uppercase">contact me</h3>
-            <h5>Coba kirim pesan, ini berfungsi</h5>
-            
-
-  <div class="email" onclick="this.classList.add('expand')">
-    <div class="from">
-      <div class="from-contents">
-        <div class="avatar me"></div>
-        <div class="name">Fajar Jayadi</div>
-      </div>
-    </div>
-    <div class="to">
-      <div class="to-contents">
-        <div class="top">
-          <div class="avatar-large me"></div>
-          <div class="name-large">Fajar Jayadi</div>
-          <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
-            <div class="x">
-              <div class="line1"></div>
-              <div class="line2"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="wow">
-            <svg class="svg-icon" viewBox="0 0 20 20"  style="margin-top:5px;">
-							<path fill="none" d="M14.52,2.469H5.482c-1.664,0-3.013,1.349-3.013,3.013v9.038c0,1.662,1.349,3.012,3.013,3.012h9.038c1.662,0,3.012-1.35,3.012-3.012V5.482C17.531,3.818,16.182,2.469,14.52,2.469 M13.012,4.729h2.26v2.259h-2.26V4.729z M10,6.988c1.664,0,3.012,1.349,3.012,3.012c0,1.664-1.348,3.013-3.012,3.013c-1.664,0-3.012-1.349-3.012-3.013C6.988,8.336,8.336,6.988,10,6.988 M16.025,14.52c0,0.831-0.676,1.506-1.506,1.506H5.482c-0.831,0-1.507-0.675-1.507-1.506V9.247h1.583C5.516,9.494,5.482,9.743,5.482,10c0,2.497,2.023,4.52,4.518,4.52c2.494,0,4.52-2.022,4.52-4.52c0-0.257-0.035-0.506-0.076-0.753h1.582V14.52z"></path>
-						</svg>
-            <div class="link"  style="margin-top:5px;"><a href="https://instagram.com/efjayadi">@efjayadi</a></div>
-          </div>
-          <div class="wow">
-            <svg class="svg-icon" viewBox="0 0 20 20"  style="margin-top:-15px;">
-							<path fill="none" d="M9.797,2.214C9.466,2.256,9.134,2.297,8.802,2.338C8.178,2.493,7.498,2.64,6.993,2.935C5.646,3.723,4.712,4.643,4.087,6.139C3.985,6.381,3.982,6.615,3.909,6.884c-0.48,1.744,0.37,3.548,1.402,4.173c0.198,0.119,0.649,0.332,0.815,0.049c0.092-0.156,0.071-0.364,0.128-0.546c0.037-0.12,0.154-0.347,0.127-0.496c-0.046-0.255-0.319-0.416-0.434-0.62C5.715,9.027,5.703,8.658,5.59,8.101c0.009-0.075,0.017-0.149,0.026-0.224C5.65,7.254,5.755,6.805,5.948,6.362c0.564-1.301,1.47-2.025,2.931-2.458c0.327-0.097,1.25-0.252,1.734-0.149c0.289,0.05,0.577,0.099,0.866,0.149c1.048,0.33,1.811,0.938,2.218,1.888c0.256,0.591,0.33,1.725,0.154,2.483c-0.085,0.36-0.072,0.667-0.179,0.993c-0.397,1.206-0.979,2.323-2.295,2.633c-0.868,0.205-1.519-0.324-1.733-0.869c-0.06-0.151-0.161-0.418-0.101-0.671c0.229-0.978,0.56-1.854,0.815-2.831c0.243-0.931-0.218-1.665-0.943-1.837C8.513,5.478,7.816,6.312,7.579,6.858C7.39,7.292,7.276,8.093,7.426,8.672c0.047,0.183,0.269,0.674,0.23,0.844c-0.174,0.755-0.372,1.568-0.587,2.31c-0.223,0.771-0.344,1.562-0.56,2.311c-0.1,0.342-0.096,0.709-0.179,1.066v0.521c-0.075,0.33-0.019,0.916,0.051,1.242c0.045,0.209-0.027,0.467,0.076,0.621c0.002,0.111,0.017,0.135,0.052,0.199c0.319-0.01,0.758-0.848,0.917-1.094c0.304-0.467,0.584-0.967,0.816-1.514c0.208-0.494,0.241-1.039,0.408-1.566c0.12-0.379,0.292-0.824,0.331-1.24h0.025c0.066,0.229,0.306,0.395,0.485,0.52c0.56,0.4,1.525,0.77,2.573,0.523c1.188-0.281,2.133-0.838,2.755-1.664c0.457-0.609,0.804-1.313,1.07-2.112c0.131-0.392,0.158-0.826,0.256-1.241c0.241-1.043-0.082-2.298-0.384-2.981C14.847,3.35,12.902,2.17,9.797,2.214"></path>
-						</svg>
-            <div class="link" style="margin-top:-15px;"><a href="https://www.pinterest.ie/efjayadi">@efjayadi</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-        </div>
+    <div style="margin-top:20px;display:flex;justify-content:center;align-items:center;width:100%;">
+        <img src="img/puc.png">
 
 
+    
     </div>
     <!-- end main-container -->
-
+    <br><br><br>
     <!-- footer -->
     <footer>
         <div class="container-fluid">
             <p class="copyright">© Fajar Jayadi 2021</p>
-			<small>v2.1.1</small>
+			<small>v2.1.0</small>
         </div>
     </footer>
     <!-- end footer -->
