@@ -503,21 +503,24 @@
                         <!-- single work -->
                 </div>
                 <!-- end portfolio_container -->
+            </div>
+            <!-- portfolio -->
+        </div>
+        <!-- end portfolio div -->
+        <div style="margin:24px 0 40px 0;display:flex;justify-content:center;align-items:center;width:100%;">
+            <span style="font-weight: bold;color:#444;font-size: 16px;margin-bottom:-18px;margin-right: 18px;">I'm Actively looking for a new job</span>
+            
+            <a href="cv.html" class="btn btn-box">See My CV</a>
+  </div>
+  <div style="margin:24px 0 40px 0;display:flex;justify-content:center;align-items:center;width:100%;">
+         
+            <p align="center">See also My 2020 design portfolio&nbsp;<a href="http://efjayadi.wordpress.com">here</a></p>
+            <br>
     </div>
     <!-- end main container -->
-    <div style="margin-top:20px;display:flex;justify-content:center;align-items:center;width:100%;">
-        <a href="CV.html" class="btn btn-box" style="border-radius: 30px;">Hire Me</a>
-    </div>
-    <br><br>
-    </div>
-	<!-- main-container -->
- 	<div style="margin-top:300px;margin-bottom:300px;display:flex;justify-content:center;align-items:center;width:100%;">
-	<a href="contact.html" class="btn-shine">Get in touch</a>
-	</div>
-    <!-- end main-container -->
-    <br><br><br>
-    <!-- footer -->
- <footer>
+
+
+<footer>
         <div class="container-fluid">
 		<div class="jolang">
 
@@ -665,9 +668,11 @@
     </footer>
     <!-- end footer -->
 
+
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
+
 
 
 
@@ -679,96 +684,20 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
     <!--  custom script -->
-<script>
-function myFunction() {
-var nama = document.getElementById("nama").value;
-var hour = new Date().getHours();
-var greeting = "Selamat " + (hour<12 && "Pagi" || hour<18 && "Sore" || "Malam");
-var pt = document.getElementById("pt").value;
-var pes = document.getElementById("pesan").value;
-document.getElementById("myAnchor").href = "http://wa.me/6283192054797?text="+greeting+".%0APerkenalkan nama saya "+nama+", dari "+pt+"%0A%0A"+pes;
-  }
-</script>	
-
-<!--  video hover -->
-<script>
-document.getElementById("myVid").addEventListener("mouseover", function() {
-	this.play();
-});
-
-document.getElementById("myVid").addEventListener("mouseleave", function() {
-	this.pause();
-});
-</script>
-
-<!--  video hover -->
-<script>
-document.getElementById("myVidd").addEventListener("mouseover", function() {
-	this.play();
-});
-
-document.getElementById("myVidd").addEventListener("mouseleave", function() {
-	this.pause();
-});
-</script>
-
-<script>
-document.getElementById("myVidd").addEventListener("mouseover", function() {
-	this.play();
-});
-
-document.getElementById("myVidd").addEventListener("mouseleave", function() {
-	this.pause();
-});
-</script>
-
     <script src="js/custom.js"></script>
-
+    <script>
+        function myFunction() {
+        var nama = document.getElementById("nama").value;
+        var hour = new Date().getHours();
+        var greeting = "Selamat " + (hour<12 && "Pagi" || hour<18 && "Sore" || "Malam");
+        var pt = document.getElementById("pt").value;
+        var pes = document.getElementById("pesan").value;
+        document.getElementById("myAnchor").href = "http://wa.me/6283192054797?text="+greeting+".%0APerkenalkan nama saya "+nama+", dari "+pt+"%0A%0A"+pes;
+          }
+        </script>	
+        
 </body>
 
 </html>
