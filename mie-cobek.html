@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
@@ -34,24 +35,23 @@
   background: rgba(0, 0, 0, 0);
   transform: rotate(-30deg) skew(25deg) scale(0.8);
   transition: 0.5s;
-
 }
 .layers img {
   position: absolute;
   width: 100%;
-  transition: 0.5s;
+  transition: 0.4s;
 left:10rem;
 }
 .layers:hover img:nth-child(5) {
-  transform: translate(160px, -160px);
+  transform: translate(220px, -220px);
   opacity: 0.95;
   }
 .layers:hover img:nth-child(4) {
-  transform: translate(140px, -140px);
+  transform: translate(160px, -160px);
   opacity: 0.9;
   }
 .layers:hover img:nth-child(3) {
-  transform: translate(110px, -110px);
+  transform: translate(120px, -120px);
   opacity: 0.85;
 }
 .layers:hover img:nth-child(2) {
@@ -65,7 +65,158 @@ left:10rem;
 -webkit-box-shadow: -36px 34px 14px -6px rgba(0,0,0,0.4);
 -moz-box-shadow: -36px 34px 14px -6px rgba(0,0,0,0.4);
 }
-	</style>
+
+.slider-container {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-container {
+  width: 3610px;
+  height: 360px;
+  clear: both;
+  position: relative;
+  animation-name: slider;
+  animation-duration: 40s;
+  animation-delay : 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+}
+
+.slider-image {
+  width: auto;
+  height: 355px;
+  float: left;
+  position: relative;
+  border-radius:10px;
+  padding:0 3px;
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0, 0);
+  }
+  14% {
+      transform: translate(-361px, 0);
+  }
+  28% {
+      transform: translate(-722px, 0);
+  }
+    42% {
+      transform: translate(-1083px, 0);
+  }
+      56% {
+      transform: translate(-1444px, 0);
+  }
+        70% {
+      transform: translate(-1805px, 0);
+  }
+          84% {
+      transform: translate(-1805px, 0);
+  }
+  100% {
+      transform: translate(-2166px, 0);
+  }
+
+}
+.btn{  animation-duration: 2s;}
+
+.squares {
+  height: 100%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;right:0;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  z-index:-1;
+}
+.square {
+  animation: squares 9.5s linear infinite;
+  align-self: flex-end;
+  width: 1em;
+  height: 1em;
+  transform: translateY(100%);
+  background: #ffbf00;
+}
+.square:nth-child(2) {
+  height: 1.5em;
+  width: 3em;
+  animation-delay: 1s;
+  animation-duration: 17s;
+  -webkit-filter: blur(5px);
+}
+.square:nth-child(3) {
+  height: 2em;
+  width: 1em;
+  animation-delay: 1.5s;
+  animation-duration: 8s;
+  -webkit-filter: blur();
+}
+.square:nth-child(4) {
+  height: 1em;
+  width: 1.5em;
+  animation-delay: 0.5s;
+  -webkit-filter: blur(3px);
+  animation-duration: 13s;
+}
+.square:nth-child(5) {
+  height: 1.25em;
+  width: 2em;
+  animation-delay: 4s;
+  -webkit-filter: blur(2px);
+  animation-duration: 11s;
+}
+.square:nth-child(6) {
+  height: 2.5em;
+  width: 2em;
+  animation-delay: 2s;
+  -webkit-filter: blur(1px);
+  animation-duration: 9s;
+}
+.square:nth-child(7) {
+  height: 5em;
+  width: 2em;
+  -webkit-filter: blur(2.5px);
+  animation-duration: 12s;
+}
+.square:nth-child(8) {
+  height: 1em;
+  width: 3em;
+  animation-delay: 5s;
+  -webkit-filter: blur(6px);
+  animation-duration: 18s;
+}
+.square:nth-child(9) {
+  height: 1.5em;
+  width: 2em;
+  -webkit-filter: blur(0.5px);
+  animation-duration: 9s;
+}
+.square:nth-child(9) {
+  height: 3em;
+  width: 2.4em;
+  animation-delay: 6s;
+  -webkit-filter: blur(0.5px);
+  animation-duration: 12s;
+}
+@keyframes squares {
+  from {
+    transform: translateY(100%) rotate(-50deg);
+  }
+  to {
+    transform: translateY(calc(-100vh + -100%)) rotate(20deg);
+  }
+}
+
+</style>
 </head>
 
 <body  style="background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);">
@@ -85,16 +236,16 @@ left:10rem;
        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo" ></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
-                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+                <span class="box-menu-text"  style="color:#ffbf00;">Menu</span><span class="box-menu-icon" style="filter:invert(1)"></span>
             </a>
             <!-- box-primary-nav-trigger -->
         </header>
         <!-- end box-header -->
-        
+    </div>    
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
@@ -121,12 +272,13 @@ left:10rem;
 	        <section class="box-intro">
       
 	<div class="col-md-6" style="padding:80px 0;">
-	<img src="img/mcblogo.png" width="60%" style="margin-left:-25px;margin-top:20px;">
+	<img src="img/mcblogo.png" width="60%" style="animation-duration: 2s;margin-left:-25px;margin-top:20px;" class=" animate__pulse">
 
     
             <div class="h-30"></div>
             <div class="contact-info">
-                <a onclick="myFunction()" id="myAnchor" href="javascript:void(0)" class="btn btn-box">Contact Me</a>
+			<h4 style="color:#fff;"><br><br>Making time a good time by <br><br>making food the good food<br><br></h4>
+                <a onclick="myFunction()" id="myAnchor" href="javascript:void(0)" class="btn btn-box">Learn More</a>
             </div>
 			</div>
 			  <div class="col-md-6" style="padding-top:200px;" >
@@ -141,31 +293,43 @@ left:10rem;
 
 	</div>
 </section>
-    <style>
-	.poto img{
-	width:24.3%;
-	border-radius:10px;
-}
-	</style>
+
 	
     <!-- main-container -->
-    <div class="poto" style="display:flex;justify-content:center;align-items:flex-end;width:100%;">
-  <div>
-       <!-- single work -->
-         <<img src="img/mcp/cwp-mcp.png" alt="X Banner">
-			   <img src="img/mcp/cwp-mcm.png" alt="Menu">
-			   <img src="img/mcp/cwp-mcd.png" alt="Flyer">
-			   <img src="img/mcp/cwxb-mcp.png" alt="X Banner">>
-    </div></div>
+<section class="slider-container">
+ <div class="image-container">
+  <img class="slider-image" src="img/mcp/cwp-mcp.png" alt="X Banner">
+  <img class="slider-image"  src="img/mcp/cwp-mcm.png" alt="Menu">
+  <img class="slider-image" src="img/mcp/cwp-mcd.png" alt="Flyer">
+   <img class="slider-image" src="img/mcp/cwxb-mcp.png" alt="X Banner">
+   <img class="slider-image" src="img/mcp/mcp-menu-foto.jpg" alt="Menu Foto">
+   <img class="slider-image" src="img/mcp/mcp-x-foto.jpeg" alt="X Banner Foto">
+   <img class="slider-image" src="img/mcp/cwp-mcp.png" alt="X Banner">
+  <img class="slider-image"  src="img/mcp/cwp-mcm.png" alt="Menu">
+  <img class="slider-image" src="img/mcp/cwp-mcd.png" alt="Flyer">
+   <img class="slider-image" src="img/mcp/cwxb-mcp.png" alt="X Banner">
+ </div>
+</section>
     <!-- end main-container -->
 
-
+			  <div class="squares">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
     <!-- footer -->
-    <footer style="background:transparent;">
         <div class="container-fluid">
-            <p class="copyright">© Fajar Jayadi 2021</p>
+            <p class="copyright" align="center">© Fajar Jayadi 2021</p>
+
         </div>
-    </footer>
+
     <!-- end footer -->
     
     <!-- back to top -->
