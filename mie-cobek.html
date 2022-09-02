@@ -27,25 +27,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<style>
-	.wadah{
-	display: flex;
-  justify-content: center;
-  margin-bottom:-200px;
-  }
+
 	.layers {
   width: 460px;
   height: 640px;
   background: rgba(0, 0, 0, 0);
   transform: rotate(-30deg) skew(25deg) scale(0.8);
   transition: 0.5s;
-  
+
 }
 .layers img {
   position: absolute;
-  margin-top:-100px;
-  margin-left:-150px;
   width: 100%;
   transition: 0.5s;
+left:10rem;
 }
 .layers:hover img:nth-child(5) {
   transform: translate(160px, -160px);
@@ -66,14 +61,14 @@
 .layers:hover img:nth-child(1) {
   transform: translate(40px, -40px);
   opacity: 1;
- box-shadow: -36px 34px 31px -6px rgba(0,0,0,0.58);
--webkit-box-shadow: -36px 34px 31px -6px rgba(0,0,0,0.58);
--moz-box-shadow: -36px 34px 31px -6px rgba(0,0,0,0.58);
+ box-shadow: -36px 34px 14px -6px rgba(0,0,0,0.4);
+-webkit-box-shadow: -36px 34px 14px -6px rgba(0,0,0,0.4);
+-moz-box-shadow: -36px 34px 14px -6px rgba(0,0,0,0.4);
 }
 	</style>
 </head>
 
-<body>
+<body  style="background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);">
 
     <!-- Preloader -->
     <div id="preloader">
@@ -104,7 +99,6 @@
         <nav>
             <ul class="box-primary-nav">
                 <li class="box-label">About me</li>
-
                 <li><a href="index.html">Intro</a> <i class="ion-ios-circle-filled color"></i></li>
                 <li><a href="img/cv.png">My CV</a></li>
                 <li><a href="services.html">services</a></li>
@@ -124,18 +118,29 @@
         <!-- end nav -->
     
     <!-- top-bar -->
-	<div class="wadah">
-    <div class="top-bar">
-         <div class="layers">
+	        <section class="box-intro">
+      
+	<div class="col-md-6" style="padding:80px 0;">
+	<img src="img/mcblogo.png" width="60%" style="margin-left:-25px;margin-top:20px;">
+
+    
+            <div class="h-30"></div>
+            <div class="contact-info">
+                <a onclick="myFunction()" id="myAnchor" href="javascript:void(0)" class="btn btn-box">Contact Me</a>
+            </div>
+			</div>
+			  <div class="col-md-6" style="padding-top:200px;" >
+    
+         <div class="layers" >
     <img src="img/mcp/1.png">
     <img src="img/mcp/2.png">
     <img src="img/mcp/3.png">
     <img src="img/mcp/4.png">
     <img src="img/mcp/5.png">
   </div>
-    </div>
-	</div>
 
+	</div>
+</section>
     <style>
 	.poto img{
 	width:24.3%;
@@ -156,7 +161,7 @@
 
 
     <!-- footer -->
-    <footer>
+    <footer style="background:transparent;">
         <div class="container-fluid">
             <p class="copyright">© Fajar Jayadi 2021</p>
         </div>
