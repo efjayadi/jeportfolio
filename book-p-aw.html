@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Company Profile - PSJ</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="css/bookportraita4.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+
+
+<body>
+
+     <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <!-- box header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box header -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                
+
+                <li><a href="index.html">Home</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="single-project.html">order <span style="color:#000;background-color: #ffbf00;padding:0 4px;border-radius:30px;">&nbsp;desain&nbsp;</span></a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="cv.html">My CV</a></li>
+
+
+                <br>
+                <li class="box-label">Follow me</li>
+<li class="box-social"><a href="http://wa.me/6283192054797"><i class="ion-social-whatsapp"></i></a></li>
+                <li class="box-social"><a href="http://facebook.com/jaya.d.fajar"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="http://instagram.com/efjayadi">
+				<i class="ion-social-instagram-outline"></i></a></li>
+                <br><br><br>
+                <li style="color:#ffbf00;font-size:16px;">Welcome to<br><b style="font-size:26px">JeStudios</b></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+
+<div class="book">
+  <div id="pages" class="pages">
+    
+   <div class="page"><img src="img/paw/1.png" width="100%"></div>
+    <div class="page"><img src="img/paw/2.png" width="100%"></div>
+    <div class="page"><img src="img/paw/3.png" width="100%"></div>
+    <div class="page"><img src="img/paw/4.png" width="100%"></div>
+    <div class="page"><img src="img/paw/5.png" width="100%"></div>
+    <div class="page"><img src="img/paw/6.png" width="100%"></div>
+   <div class="page"><img src="img/paw/7.png" width="100%"></div>
+    <div class="page"><img src="img/paw/8.png" width="100%"></div>
+    <div class="page"><img src="img/paw/9.png" width="100%"></div>
+    <div class="page"><img src="img/paw/10.png" width="100%"></div>
+    <div class="page"><img src="img/paw/11.png" width="100%"></div>
+    <div class="page"><img src="img/paw/12.png" width="100%"></div>
+	   <div class="page"><img src="img/paw/13.png" width="100%"></div>
+    <div class="page"><img src="img/paw/14.png" width="100%"></div>
+    <div class="page"><img src="img/paw/15.png" width="100%"></div>
+    <div class="page"><img src="img/paw/16.png" width="100%"></div>
+    <div class="page"><img src="img/paw/17.png" width="100%"></div>
+    <div class="page"><img src="img/paw/18.png" width="100%"></div>
+    <div class="page"><img src="img/paw/19.png" width="100%"></div>
+    <div class="page"><img src="img/paw/20.png" width="100%"></div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- end top-bar -->
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+<script>
+  var pages = document.getElementsByClassName('page');
+  for(var i = 0; i < pages.length; i++)
+    {
+      var page = pages[i];
+      if (i % 2 === 0)
+        {
+          page.style.zIndex = (pages.length - i);
+        }
+    }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    for(var i = 0; i < pages.length; i++)
+      {
+        //Or var page = pages[i];
+        pages[i].pageNum = i + 1;
+        pages[i].onclick=function()
+          {
+            if (this.pageNum % 2 === 0)
+              {
+                this.classList.remove('flipped');
+                this.previousElementSibling.classList.remove('flipped');
+              }
+            else
+              {
+                this.classList.add('flipped');
+                this.nextElementSibling.classList.add('flipped');
+              }
+           }
+        }
+  })
+  </script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
